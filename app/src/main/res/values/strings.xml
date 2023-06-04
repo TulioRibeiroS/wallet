@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Carteira</string>
+    <string name="empty_response">Vazio</string>
+    <string name="primary_button">Cartões</string>
+    <string name="second_button">Adicionar cartão</string>
+    <string name="new_card">Novo cartão</string>
+    <string name="create_sucess">Cadastrado com sucesso</string>
+    <string name="back">Voltar</string>
+    <string name="create">Criar</string>
+    <string name="my_cards">Meus Cartões</string>
+    <string name="use_this">Usar este</string>
+    <string name="request_error">Erro na requisão</string>
+    <string name="request_conection_error">Erro na conexão</string>
+    <string name="home_app">Tela principal</string>
+    <string name="list_card">Lista de cartões</string>
+    <string name="card_number">Número do cartão</string>
+    <string name="card_titular_person">Nome do titular do cartão</string>
+    <string name="card_final_date">Vencimento</string>
+    <string name="card_security_code">Código de segurança</string>
+    <string name="card_cs">cvv</string>
+    <string name="next_button">Avançar</string>
+    <string name="doDate">Validade</string>
+    <string name="create_card_title">Cadastro</string>
+</resources>

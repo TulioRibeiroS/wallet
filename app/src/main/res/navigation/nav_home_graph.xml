@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="dev.mlds.wallet.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_cardListFragment"
+            app:destination="@id/cardListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createCardFragment"
+            app:destination="@id/createCardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cardListFragment"
+        android:name="dev.mlds.wallet.ui.list.CardListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_card_list">
+        <action
+            android:id="@+id/action_cardListFragment_to_createCardFragment"
+            app:destination="@id/createCardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createCardFragment"
+        android:name="dev.mlds.wallet.ui.create.CreateFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_create">
+        <action
+            android:id="@+id/action_createCardFragment_to_resumeFragment"
+            app:destination="@id/resumeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resumeFragment"
+        android:name="dev.mlds.wallet.ui.resume.ResumeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_resume" />
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="dev.mlds.wallet.ui.splash.SplashFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_splash" />
+
+    <action
+        android:id="@+id/nav_to_splash"
+        app:destination="@id/splashFragment" />
+
+    <action
+        android:id="@+id/nav_to_list"
+        app:destination="@id/cardListFragment"
+        app:popUpTo="@id/homeFragment"
+        app:popUpToInclusive="false" />
+</navigation>
